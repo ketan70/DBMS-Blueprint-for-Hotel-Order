@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block bace %}
+<br>
+<br>
+<br>
+<div class="container">
+    <form action="/employee_form" method="POST">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Name</span>
+            <input type="text" class="form-control" name="na" placeholder="Full Name" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Phone No</span>
+            <input type="number" class="form-control" name="ph" placeholder="Phone No" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="e" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+
+        <select class="form-select" name="comp" aria-label="Default select example">
+            <option selected>Select job type you want</option>
+            <option value="Manager">1. Apply for Manager</option>
+            <option value="Waiter">2. Waiter</option>
+            <option value="Chef">3. Chef</option>
+            <option value="HouseKeeper">4. Housekeeper</option>
+        </select>
+
+        <br>
+        <br>
+        <div class="mb-3">
+         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+         <textarea class="form-control" name="dec" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <br>
+        <br>
+
+
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+    </form>
+</div>
+
+
+{% endblock bace %}

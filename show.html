@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block bace %}
+
+  <br>
+
+
+  <div class="container">
+    <table class="table table-bordered border-success">
+      <thead>
+        <tr>
+          <th scope="col">SNo</th>
+          <th scope="col">Name</th>
+          <th scope="col">No. of People</th>
+          <th scope="col">Phone No.</th>
+          <th scope="col">Email Id</th>
+          <th scope="col">type of Room</th>
+          <th scope="col">Booking Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for Todo in Alldata %}
+        <tr>
+          <th scope="row">{{ loop.index }}</th>
+          <td>{{Todo.Name}}</td>
+          <td>{{Todo.PNo}}</td>
+          <td>{{Todo.Mobile_No}}</td>
+          <td>{{Todo.email_ID}}</td>
+          <td>{{Todo.room}}</td>
+          <td>{{Todo.date_created}}</td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+  
+
+  
+{% endblock bace %}

@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% block bace %}
+<br>
+<br>
+
+
+<div class="container">
+
+
+    <form action="/update_form/{{d.sno}}" method="POST">
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Full name</label>
+        <input type="text" class="form-control" value={{d.sno}} name="name" id="exampleInputPassword1">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Number of people</label>
+        <input type="number" class="form-control" value={{d.Name}} name="ppl" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Phone number</label>
+        <input type="numbers" class="form-control" value={{d.Mobile_No}} name= "pno" id="exampleInputPassword1">
+      </div>
+
+      <div class="mb-3 ">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" value={{d.email_ID}} name="em" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+
+      <select class="form-select" name="comp_select"  aria-label="Default select example">
+        <option selected>select the the type of room you want</option>
+        <option value="STANDARD ROOM">1.STANDARD ROOM</option>
+        <option value="DELUXE ROOM">2.DELUXE ROOM</option>
+        <option value="LUXURY ROOM">3.LUXURY ROOM</option>
+        <option value="FAMILY ROOM">4.FAMILY ROOM</option>
+      </select>
+      <br>
+      <br>
+
+      
+      <button type="submit" class="btn btn-outline-dark">update</button>
+    </form>
+    
+  </div>
+
+
+    
+{% endblock bace %}
