@@ -1,4 +1,4 @@
-#Streamlined Hotel Harmony with DBMS Wizardry
+### Streamlined Hotel Harmony with DBMS Wizardry
 ## DBMS project manage the hotel registration system and employee registration system
 
 ### This is a hotel management system built using HTML, Python, Django, SQLite, and Bootstrap to streamline operations and improve guest experiences.
